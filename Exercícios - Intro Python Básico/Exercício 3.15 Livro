@@ -1,0 +1,23 @@
+'''
+Created on 21/08/2016
+
+@author: Andre Arruda
+'''
+
+if __name__ == '__main__':
+    qtdCigar = int(input("Qual a quantidade de cigarros que voce fuma por dia? "))
+    anosFum = int(input("Ha quantos anos voce fuma? "))
+    
+    cigarTotal = anosFum*(qtdCigar*365) #Isso vai me dar a qtd total de cigarros tragados
+    
+    print("Em %d anos fumando, voce consumiu %d cigarros!" %(anosFum, cigarTotal))
+    
+    '''
+    totalDias : conversao minutos em dias
+    (cigarTotal*10) equivale a quantidade total de minutos perdidos de vida.
+    Poderiamos criar uma variavel para isso, mas para deixar o codigo mais enxuto,
+    preferi fazer direto.
+    '''
+    totalDias = (cigarTotal*10)/1440
+    
+    print("Voce perdeu %d dias de vida!" %totalDias)
